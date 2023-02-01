@@ -1,0 +1,33 @@
+{
+  "name": "process-watchdog",
+  "version": "0.0.1",
+  "description": "Watches multiple processes, restarts them if necessary, and ensures graceful shutdown.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "bin": {
+    "process-watchdog": "dist/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/dejanceltra/process-watchdog"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@types/yargs": "^17.0.15",
+    "quoted-string-space-split": "^1.1.1",
+    "yargs": "^17.6.2"
+  }
+}
